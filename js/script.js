@@ -35,9 +35,11 @@ function checkResult(randomNumber) {
     const userNumber = parseInt(userInput.value);
     if (userNumber === randomNumber) {
       resultDiv.innerHTML = `<p>Enhorabuena, has salvado al mundo 👑 El número correcto era el ${userNumber}.</p>`;
+      resultDiv.classList.remove('red');
       resultDiv.classList.add('green');
     } else {
       resultDiv.innerHTML = `<p>La bomba explotó 💣 Elegiste el número ${userNumber}, pero el número correcto era ${randomNumber}.</p>`;
+      resultDiv.classList.remove('green');
       resultDiv.classList.add('red');
     }
   }
