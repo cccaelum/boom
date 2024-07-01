@@ -8,9 +8,11 @@
 </head>
 <body>
   <h1>Bomba Game</h1>
-  <p>Introduce un número del 1 al 3 y pulsa enter o clicka fuera del cuadrado:</p>
+  <p class="command">Introduce un número del 1 al 3 y pulsa enter o clicka fuera del cuadrado:</p>
   <input type="number" placeholder="0" id="userInput" min="1" max="3">
-  <div id="countdown"></div>
+  <div id="countdown">
+    <p>Cuenta atrás: <span id="counter">0</span> segundos</p>
+  </div>
   <div id="result"></div>
   <button id="restart">Reiniciar Juego</button>
 
